@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A079A8EF29DB52FE002D701C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A079A8EE29DB52FE002D701C /* SnapKit */; };
 		A08C968829D56F1000637C67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08C968729D56F1000637C67 /* AppDelegate.swift */; };
 		A08C968A29D56F1000637C67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08C968929D56F1000637C67 /* SceneDelegate.swift */; };
 		A08C968C29D56F1000637C67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08C968B29D56F1000637C67 /* ViewController.swift */; };
 		A08C968F29D56F1000637C67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08C968D29D56F1000637C67 /* Main.storyboard */; };
 		A08C969129D56F1200637C67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08C969029D56F1200637C67 /* Assets.xcassets */; };
 		A08C969429D56F1200637C67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08C969229D56F1200637C67 /* LaunchScreen.storyboard */; };
+		A0AA680F29D5708400ECAFF6 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AA680D29D5708400ECAFF6 /* MainCollectionViewCell.swift */; };
+		A0AA681029D5708400ECAFF6 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0AA680E29D5708400ECAFF6 /* MainCollectionViewCell.xib */; };
+		A0AA681529DB476600ECAFF6 /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AA681429DB476600ECAFF6 /* CellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A079A8EC29DB52BD002D701C /* SnapKit-develop */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "SnapKit-develop"; sourceTree = "<group>"; };
 		A08C968429D56F1000637C67 /* UICollectionViewB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08C968729D56F1000637C67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A08C968929D56F1000637C67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		A08C969029D56F1200637C67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A08C969329D56F1200637C67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A08C969529D56F1200637C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0AA680D29D5708400ECAFF6 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A0AA680E29D5708400ECAFF6 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		A0AA681429DB476600ECAFF6 /* CellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A079A8EF29DB52FE002D701C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A079A8EB29DB52BD002D701C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A079A8EC29DB52BD002D701C /* SnapKit-develop */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		A079A8ED29DB52FE002D701C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A08C967B29D56F1000637C67 = {
 			isa = PBXGroup;
 			children = (
+				A079A8EB29DB52BD002D701C /* Packages */,
 				A08C968629D56F1000637C67 /* UICollectionViewB */,
 				A08C968529D56F1000637C67 /* Products */,
+				A079A8ED29DB52FE002D701C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,8 @@
 		A08C968629D56F1000637C67 /* UICollectionViewB */ = {
 			isa = PBXGroup;
 			children = (
+				A0AA681329DB46F300ECAFF6 /* Module */,
+				A08C969F29D5703C00637C67 /* MainCollectionViewCell */,
 				A08C968729D56F1000637C67 /* AppDelegate.swift */,
 				A08C968929D56F1000637C67 /* SceneDelegate.swift */,
 				A08C968B29D56F1000637C67 /* ViewController.swift */,
@@ -65,6 +93,23 @@
 				A08C969529D56F1200637C67 /* Info.plist */,
 			);
 			path = UICollectionViewB;
+			sourceTree = "<group>";
+		};
+		A08C969F29D5703C00637C67 /* MainCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA680D29D5708400ECAFF6 /* MainCollectionViewCell.swift */,
+				A0AA680E29D5708400ECAFF6 /* MainCollectionViewCell.xib */,
+			);
+			path = MainCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A0AA681329DB46F300ECAFF6 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA681429DB476600ECAFF6 /* CellData.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +128,9 @@
 			dependencies = (
 			);
 			name = UICollectionViewB;
+			packageProductDependencies = (
+				A079A8EE29DB52FE002D701C /* SnapKit */,
+			);
 			productName = UICollectionViewB;
 			productReference = A08C968429D56F1000637C67 /* UICollectionViewB.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +176,7 @@
 				A08C969429D56F1200637C67 /* LaunchScreen.storyboard in Resources */,
 				A08C969129D56F1200637C67 /* Assets.xcassets in Resources */,
 				A08C968F29D56F1000637C67 /* Main.storyboard in Resources */,
+				A0AA681029D5708400ECAFF6 /* MainCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +190,8 @@
 				A08C968C29D56F1000637C67 /* ViewController.swift in Sources */,
 				A08C968829D56F1000637C67 /* AppDelegate.swift in Sources */,
 				A08C968A29D56F1000637C67 /* SceneDelegate.swift in Sources */,
+				A0AA681529DB476600ECAFF6 /* CellData.swift in Sources */,
+				A0AA680F29D5708400ECAFF6 /* MainCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +409,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A079A8EE29DB52FE002D701C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A08C967C29D56F1000637C67 /* Project object */;
 }
