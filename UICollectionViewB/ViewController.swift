@@ -49,7 +49,16 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate{
         cell.describeLabel.textColor = .white
         return cell
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+               let cell = mainCollectionView.cellForItem(at: indexPath)
+               cell?.layer.borderWidth = 2.0
+               cell?.layer.borderColor = UIColor.red.cgColor
+    }
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+                cell?.layer.borderWidth = 0.0
+    }
     
 }
 
